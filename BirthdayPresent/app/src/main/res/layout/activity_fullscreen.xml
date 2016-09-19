@@ -1,0 +1,261 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.way.birthdaypresent.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <RelativeLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:keepScreenOn="true">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_0"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_0" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_0"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_0"
+                            android:visibility="gone" />
+
+                    </com.way.flipboardlibrary.FlipBoard>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_1"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_1" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_1"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_1"
+                            android:visibility="gone" />
+
+                    </com.way.flipboardlibrary.FlipBoard>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_2"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_2" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_2"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_2"
+                            android:visibility="gone" />
+
+                    </com.way.flipboardlibrary.FlipBoard>
+                </TableRow>
+
+
+                <TableRow>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_3"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_3" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_3"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_3"
+                            android:visibility="gone" />
+
+                    </com.way.flipboardlibrary.FlipBoard>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_4"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_4" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_4"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_4"
+                            android:visibility="gone" />
+
+                    </com.way.flipboardlibrary.FlipBoard>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_5"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_5" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_5"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_5"
+                            android:visibility="gone" />
+
+                    </com.way.flipboardlibrary.FlipBoard>
+                </TableRow>
+
+
+                <TableRow>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/iv_photo_6"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_6" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_6"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_6"
+                            android:visibility="gone" />
+                    </com.way.flipboardlibrary.FlipBoard>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/iv_photo_7"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_7" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_7"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_7"
+                            android:visibility="gone" />
+                    </com.way.flipboardlibrary.FlipBoard>
+
+                    <com.way.flipboardlibrary.FlipBoard
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/iv_photo_8"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_photo_on_8" />
+
+                        <ImageView
+                            android:id="@+id/iv_heart_8"
+                            android:layout_width="200dip"
+                            android:layout_height="200dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_highlights_heart_on_8"
+                            android:visibility="gone" />
+                    </com.way.flipboardlibrary.FlipBoard>
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button"
+                android:textColor="#ffffff"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

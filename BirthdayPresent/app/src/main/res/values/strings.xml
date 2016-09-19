@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">哼</string>
+
+    <string name="title_activity_fullscreen">很美，是不是？</string>
+    <string name="dummy_button">盯着图片看30分钟，你就会发现——吸烟有害健康。</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
