@@ -3,7 +3,4 @@
 
     <string name="front">Front side</string>
     <string name="back">Back side</string>
-    <string name="animations">Animations</string>
-    <string name="profile">http://github.com/4xes</string>
-    <string name="flip_animation">Flip animation</string>
 </resources>

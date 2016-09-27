@@ -12,6 +12,7 @@
     tools:context="com.way.flipboard.MainActivity">
 
     <com.way.flipboardlibrary.FlipBoard
+        android:id="@+id/fb_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible">
@@ -22,6 +23,7 @@
     </com.way.flipboardlibrary.FlipBoard>
 
     <com.way.flipboardlibrary.FlipBoard
+        android:id="@+id/fb_sun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible">

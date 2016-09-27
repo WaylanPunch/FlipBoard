@@ -70,6 +70,10 @@ public class FlipBoard extends FrameLayout implements Animation.AnimationListene
         touchListener.addSwipeListener(this);
     }
 
+    public boolean isFlipped() {
+        return isFlipped;
+    }
+
     private void toggleView() {
         if (frontView == null || backView == null) {
             return;
@@ -197,8 +201,7 @@ public class FlipBoard extends FrameLayout implements Animation.AnimationListene
 
         @Override
         protected void applyTransformation(float interpolatedTime, Transformation t) {
-            // Angle around the y-axis of the rotation at the given time. It is
-            // calculated both in radians and in the equivalent degrees.
+            //计算给定时间内Y轴坐标上的偏转角，根据弧度和角度公式获得
             final double radians = Math.PI * interpolatedTime;
 
             float degrees = (float) (180.0 * radians / Math.PI);
@@ -207,12 +210,8 @@ public class FlipBoard extends FrameLayout implements Animation.AnimationListene
                 degrees = -degrees;
             }
 
-            // Once we reach the midpoint in the animation, we need to hide the
-            // source view and show the destination view. We also need to change
-            // the angle by 180 degrees so that the destination does not come in
-            // flipped around. This is the main problem with SDK sample, it does
-            // not
-            // do this.
+
+            //动画播放到中点时，需要隐藏初始视图，展示最终视图，增加或减少180°的差值，避免最终视图翻转过去
             if (interpolatedTime >= 0.5f) {
                 if (direction == Direction.UP) {
                     degrees += 180.f;
@@ -231,8 +230,8 @@ public class FlipBoard extends FrameLayout implements Animation.AnimationListene
             final Matrix matrix = t.getMatrix();
 
             camera.save();
-            //you can delete this line, it move camera a little far from view and get back
-            camera.translate(0.0f, 0.0f, (float) (EXPERIMENTAL_VALUE * Math.sin(radians)));
+            //可删除此行代码，镜头在各轴上的位移效果
+            camera.translate(1.5f, 1.5f, (float) (EXPERIMENTAL_VALUE * Math.sin(radians)));
             camera.rotateX(degrees);
             camera.rotateY(0);
             camera.rotateZ(0);

@@ -3,10 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-
-    <color name="oxford_blue">#263238</color>
-    <color name="orange_red">#FF3D00</color>
-    <color name="pacific_blue">#0091EA</color>
+    <color name="colorWhite">#FFFFFF</color>
 
 </resources>
