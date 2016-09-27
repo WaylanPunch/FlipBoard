@@ -77,4 +77,29 @@
     }
 
 
-## 我还没说完
+## 如何使用
+
+		fb_sun.setOnFlipListener(new FlipBoard.OnFlipListener() {
+            @Override
+            public void onFlipStart(FlipBoard view) {
+                boolean isFlipped = view.isFlipped();
+                Log.d(TAG, "onFlipStart debug, isFlipped = " + isFlipped);
+            }
+
+            @Override
+            public void onFlipEnd(FlipBoard view) {
+                boolean isFlipped = view.isFlipped();
+                Log.d(TAG, "onFlipEnd debug, isFlipped = " + isFlipped);
+                if (isFlipped) {
+                    Toast.makeText(MainActivity.this, "Back Side", Toast.LENGTH_SHORT).show();
+                    rootView.setBackgroundResource(R.color.colorPrimary);
+                } else {
+                    Toast.makeText(MainActivity.this, "Front Side", Toast.LENGTH_SHORT).show();
+                    rootView.setBackgroundResource(R.color.colorWhite);
+                }
+            }
+        });
+
+>通过**isFlipped()**方法获取当前视图是哪个卡片，如果为true则表示已翻转到反面卡片，false则为正面卡片。
+
+## 我说完了
